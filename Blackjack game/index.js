@@ -1,4 +1,9 @@
 
+let player ={
+    name: "Giovanni Ticas",
+    chips: 15
+}
+
 let cards = [];
 let sum = 0;
 let hasBlackJack = false;
@@ -6,7 +11,10 @@ let isAlive = false;
 let message = "";
 let messageEl = document.querySelector('#message-el');
 let sumEl = document.querySelector('#sum-el');
-let cardEl = document.querySelector('#card-el')
+let cardEl = document.querySelector('#card-el');
+let playerEl = document.querySelector('#player-el');
+
+playerEl.textContent = player.name + ": $" + player.chips;
 
 function getRandomCard(){
     let rdmCrd = Math.floor(Math.random() * 13) + 1;
