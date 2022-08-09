@@ -46,16 +46,16 @@ let myself = [
 
 // ADDING ITEMS TO AN ARRAY (practice)
 
-let message = [
-    "Hey, how's it going?",
-    "I'm gr8! wby?"
-]
+// let message = [
+//     "Hey, how's it going?",
+//     "I'm gr8! wby?"
+// ]
 
-let newMessage = "Fine as well";
+// let newMessage = "Fine as well";
 
 
-message.push(newMessage);
-console.log(message);
+// message.push(newMessage);
+// console.log(message);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -71,7 +71,7 @@ console.log(message);
 
 //    START           FINISH       STEP SIZE
 // for ( let count = 10;  count < 21;  count++ )  {
-    
+
 //     console.log(count)
 
 // }
@@ -96,22 +96,78 @@ console.log(message);
 // }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let cards = [
-    7,
-    4,
-    6
-]
-for (let i = 0; i < cards.length; i++ ){
+// let cards = [
+//     7,
+//     4,
+//     6
+// ]
+// for (let i = 0; i < cards.length; i++ ){
 
-    console.log(cards[i]);
+//     console.log(cards[i]);
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//  CREATING RANDOM NUMBERS
+
+
+
+function rollDice() {
+    let randomNumber = Math.floor(Math.random() * 6) + 1;
+    return randomNumber;
 }
 
+console.log(rollDice());
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// LOGICAL OPERATOR &&
+let hasSolvedChallenge =  false;
+let hasHintsLeft = false;
 
+if (hasSolvedChallenge === false && hasHintsLeft === false){
+    showSolution();
+}
 
+function showSolution(){
+        console.log("Showing the solution...");
+    
+}
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// LOGICAL OPERATOR ||
 
+let likesDocumentaries = true;
+let likesStartups = false;
+
+if (likesDocumentaries === true || likesStartups === true){
+    recommendMovie();
+}
+
+function recommendMovie(){
+    console.log("Hey, check out this new film...");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// LEARNING OBJECTS
+// Sugar Grove, North Carolina, US
+// 2,615 kilometers away
+// Sep 4 – 9
+// $173
+//  night
+let listing = {
+    title: "Sugar Grove, North Carolina, US",
+    distance: "2,615 kilometers away",
+    month: "Sep",
+    arrival: 4,
+    departure: 9,
+    price: 173,
+    score: 4.96,
+    tags: ["barn", "wifi", "valley view", "hiking trails"],
+    availability: true
+}
+
+console.log(listing.title, listing.price);
 
 
 
