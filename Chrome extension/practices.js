@@ -1,10 +1,10 @@
 // EVENT LISTENER PRACTICE
 
-let inputBtn = document.getElementById('input-btn');
+// let inputBtn = document.getElementById('input-btn');
 
-inputBtn.addEventListener('click', function(){
-    console.log("I want to open the box!")
-})
+// inputBtn.addEventListener('click', function(){
+//     console.log("I want to open the box!")
+// })
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // CONST AND LET PRACTICE
@@ -51,9 +51,15 @@ const email = `
 `
 console.log(email)
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// LOCAL STORAGE
 
+localStorage.setItem("myLeads", "www.google.com");
+console.log(localStorage.getItem("myLeads"));
 
+localStorage.clear();
+console.log(localStorage);
 
 
 

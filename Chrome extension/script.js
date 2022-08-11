@@ -4,6 +4,8 @@ const inputBtn = document.querySelector('#input-btn');
 const ulEl = document.querySelector('#ul-el')
 
 
+
+
 inputBtn.addEventListener('click', function(){ 
     myLeads.push(inputEl.value);
     inputEl.value = "";
