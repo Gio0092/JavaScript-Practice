@@ -55,12 +55,28 @@ console.log(email)
 
 // LOCAL STORAGE
 
-localStorage.setItem("myLeads", "www.google.com");
-console.log(localStorage.getItem("myLeads"));
+// localStorage.setItem("myLeads", "www.google.com");
+// console.log(localStorage.getItem("myLeads"));
 
-localStorage.clear();
-console.log(localStorage);
+// localStorage.clear();
+// console.log(localStorage);
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//ARRAY TO STRINGS
+
+let myLeads = `["Hello","Hi"]`;//STRING
+
+myLeads = JSON.parse(myLeads);//PARSE TURNS IT INTO AN ARRAY AGAIN
+
+myLeads.push("Hola");// ADDS A VALUE INTO THE ARRAY
+
+myLeads = JSON.stringify(myLeads);// STRINGIFY TURNS IT INTO A STRING
+
+// console.log(myLeads);
+
+console.log(myLeads); // LOGS OUT A STRING
+console.log(typeof myLeads)// LOGS OUT THE TYPE OF VALUE
 
 
 
