@@ -1,12 +1,13 @@
-body{
+body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
 }
 
-input{
+input {
     width: 100%;
-    border:none;
+    border: none;
     margin-bottom: 5px;
     padding: 10px;
     box-sizing: border-box;
@@ -16,11 +17,28 @@ input{
 
 
 
-button{
+button {
     font-weight: bold;
     color: white;
     background-color: #259021;
     padding: 10px 15px;
     border: none;
     border-radius: 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin-top: 5px;
+}
+
+a {
+    font-family:  sans-serif;
+    color: #259021;
+    font-weight: 450;
+
 }

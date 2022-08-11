@@ -35,3 +35,31 @@ const fullPrice = basePrice - discount + shippingCost
 console.log("Total cost: " + fullPrice + ". It will arrive in " + shippingTime)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// TEMPLATE STRINGS/LITERALS
+
+const recipient = "James";
+const sender = "Giova"
+
+// transform the following exoression in to a template string
+// const email = "Hey " + recipient + "! How is it going? Cheers Per"
+
+const email = `
+    Hey ${recipient}!
+    How is it going? Cheers
+    ${sender}
+`
+console.log(email)
+
+
+
+
+
+
+
+
+
+
+
+
+
