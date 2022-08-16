@@ -9,10 +9,10 @@
 
 // CONST AND LET PRACTICE
 
-const playerName = "Giova";
-let credits = 45;
+// const playerName = "Giova";
+// let credits = 45;
 
-credits = credits + 10;
+// credits = credits + 10;
 
 // If possible, use CONST. If not, use LET.
 
@@ -78,10 +78,55 @@ myLeads = JSON.stringify(myLeads);// STRINGIFY TURNS IT INTO A STRING
 console.log(myLeads); // LOGS OUT A STRING
 console.log(typeof myLeads)// LOGS OUT THE TYPE OF VALUE
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// TRUHLY AND FALSY VALUES
+
+//FALSY: false - 0 - "" - null - undefined - NaN (not a number)
+
+//Null -> how a dev signalizes emptiness
+//Undefined -> how JavaScript signalizes emptiness
+
+// console.log(Boolean(""));   // false
+// console.log(Boolean("0"));  // true
+// console.log(Boolean(100));  // true
+// console.log(Boolean(null)); // false
+// console.log(Boolean([0]));  // true
+// console.log(Boolean(-0));   // false
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCTION PARAMETERS
+
+// What are greeting and name?  Parameters
+// What are "Howdy" and "James"? Arguments
+// What are num1 and num2? Parameters
+// What are 3 and 4?    Arguments
 
 
+//.                parameters
+// function greetUser(greeting, name) { 
+//     welcomeEl.textContent = `${greeting}, ${name} 👋`
+// }
+
+// //.        arguments
+// let hi = "Howdy"
+// greetUser(hi, "James")
+
+// function add(num1,num2){
+//     return num1 + num2;
+// }
+
+// console.log( add(3,4));
+// console.log( add(9,102));
+
+// Create a function, getFirst(arr), that returns the first item in the array
+
+function getFirst(arr){
+    return arr[0];
+}
 
 
+// Call it with an array as an argument to verify that it works
 
-
-
+console.log(getFirst([2,4,6,5,8]));

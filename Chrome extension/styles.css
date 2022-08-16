@@ -19,11 +19,18 @@ input {
 
 button {
     font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid #259021;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#input-btn, #tab-btn{
     color: white;
     background-color: #259021;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 1px;
+}
+#del-btn {
+    color: #259021;
+    background-color: white;
 }
 
 ul {
@@ -42,3 +49,4 @@ a {
     font-weight: 450;
 
 }
+
